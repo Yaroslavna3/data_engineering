@@ -2,7 +2,7 @@ import pandas as pd
 import gdown
 
 FILE_ID = "1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"  
-file_url = f"https://drive.google.com/uc?id={RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"
+file_url = f"https://drive.google.com/uc?id=1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"
 
 def main():
     try:
