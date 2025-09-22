@@ -9,7 +9,7 @@ def main():
         output = "dataset.csv"
         gdown.download(file_url, output, quiet=False)
 
-       raw_data = pd.read_csv(output)
+        raw_data = pd.read_csv(output)
         print("Первые 10 строк датасета:")
         print(raw_data.head(10))
     except Exception as e:
