@@ -1,16 +1,15 @@
 import pandas as pd
-import requests
-from io import StringIO
+import gdown
 
 FILE_ID = "1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"  
-file_url = f"https://drive.google.com/uc?id=1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq&export=download"
+file_url = f"https://drive.google.com/uc?id={RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"
 
 def main():
     try:
-        response = requests.get(file_url)
-        response.raise_for_status()  
-                       
-        raw_data = pd.read_csv(StringIO(response.text), sep=',')
+        output = "dataset.csv"
+        gdown.download(file_url, output, quiet=False)
+
+       raw_data = pd.read_csv(output)
         print("Первые 10 строк датасета:")
         print(raw_data.head(10))
     except Exception as e:
