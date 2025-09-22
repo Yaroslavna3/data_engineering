@@ -1,4 +1,6 @@
 import pandas as pd
+import requests
+from io import StringIO
 
 FILE_ID = "1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq"  
 file_url = f"https://drive.google.com/uc?id=1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq&export=download"
