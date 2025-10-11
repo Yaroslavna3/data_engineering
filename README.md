@@ -14,6 +14,7 @@
 1. Загрузку CSV-файла с Google Drive.
 2. Автоматическое приведение типов данных (категориальные, числовые, даты).
 3. Сохранение результата в формат `.parquet` для более эффективного хранения и анализа.
+4. Сравнение типов данных до и после приведения
 
 ---
 
@@ -24,5 +25,8 @@
 
 ## Пример вывода 
 
-<img width="1463" height="507" alt="image" src="https://github.com/user-attachments/assets/88f6b928-c23b-4edd-86c5-49d099e3e90d" />
+<img width="1464" height="1077" alt="image" src="https://github.com/user-attachments/assets/d657b47c-310e-43e2-9ba0-a0686d49ee51" />
+<img width="1092" height="1075" alt="image" src="https://github.com/user-attachments/assets/fdf2b511-4098-419d-ba58-7bcec69b7a35" />
+
+
 
