@@ -24,24 +24,24 @@ def main():
             "device_brand", "traffic_source"
         ]
         for col in cat_cols:
-            if col in df.columns:
-                df[col] = df[col].astype("category")
+            if col in raw_data.columns:
+                raw_data[col] = raw_data[col].astype("category")
 
         # Даты
         date_cols = ["publish_date_approx", "year_month"]
         for col in date_cols:
-            if col in df.columns:
-                df[col] = pd.to_datetime(df[col], errors="coerce")
+            if col in raw_data.columns:
+                raw_data[col] = pd.to_datetime(raw_data[col], errors="coerce")
 
         # Числовые
-        for col in df.select_dtypes(include="int64").columns:
-            df[col] = pd.to_numeric(df[col], downcast="integer")
-        for col in df.select_dtypes(include="float64").columns:
-            df[col] = pd.to_numeric(df[col], downcast="float")
+        for col in raw_data.select_dtypes(include="int64").columns:
+            raw_data[col] = pd.to_numeric(raw_data[col], downcast="integer")
+        for col in raw_data.select_dtypes(include="float64").columns:
+            raw_data[col] = pd.to_numeric(raw_data[col], downcast="float")
 
         # --- Сохраняем результат ---
         processed_output = "processed_dataset.parquet"
-        df.to_parquet(processed_output, index=False)
+        raw_data.to_parquet(processed_output, index=False)
 
         print(f"Датасет приведён к оптимальным типам и сохранён в {processed_output}")
         
