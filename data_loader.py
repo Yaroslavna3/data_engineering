@@ -12,6 +12,9 @@ def main():
         raw_data = pd.read_csv(output)
         print("Первые 10 строк датасета:")
         print(raw_data.head(10))
+
+        print("\nТипы данных ДО обработки:")
+        print(raw_data.dtypes)
         
         # --- Автоматическое приведение типов ---
         # Категориальные 
@@ -39,6 +42,9 @@ def main():
         for col in raw_data.select_dtypes(include="float64").columns:
             raw_data[col] = pd.to_numeric(raw_data[col], downcast="float")
 
+        print("\nТипы данных ПОСЛЕ обработки:")
+        print(raw_data.dtypes)
+        
         # --- Сохраняем результат ---
         processed_output = "processed_dataset.parquet"
         raw_data.to_parquet(processed_output, index=False)
