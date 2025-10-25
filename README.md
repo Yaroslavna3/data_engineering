@@ -28,5 +28,12 @@
 <img width="1464" height="1077" alt="image" src="https://github.com/user-attachments/assets/d657b47c-310e-43e2-9ba0-a0686d49ee51" />
 <img width="1092" height="1075" alt="image" src="https://github.com/user-attachments/assets/fdf2b511-4098-419d-ba58-7bcec69b7a35" />
 
+---
+## Просмотреть EDA
+
+Вы можете просмотреть рендер ноутбука через nbviewer:
+
+[Открыть EDA-ноутбук в nbviewer](https://nbviewer.org/github/Yaroslavna3/data_engineering/blob/main/EDA.ipynb)
+
 
 
