@@ -3,7 +3,7 @@
 Проект по автоматизированной загрузке, предварительной обработке и оптимизации датасета из Google Drive.  
 Датасет содержит информацию о трендах на двух платформах: Тикток и Ютуб
 
-[Ссылка на датасет](https://drive.google.com/drive/folders/1RRt9sN3xSrAoGq-4kGoO-AcTCTrZWqdq?usp=sharing)
+[Ссылка на датасет](https://drive.google.com/file/d/1PLRMh5K3zbbXbN8HYnyciJWkfhosadFs/view?usp=drive_link)
 
 ## Описание данных
 | Признак | Тип данных | Описание |
@@ -13,7 +13,7 @@
 | views | int | Количество просмотров |
 | ... | ... | ... |
 
-[Полное описание признаков (CSV)]([experiments/feature_description.csv](https://drive.google.com/file/d/1ikhqJXk4jEJRSeEyaxPqdkKiUk_0CCKW/view?usp=drive_link))
+[Полное описание признаков (CSV)](https://drive.google.com/file/d/1ikhqJXk4jEJRSeEyaxPqdkKiUk_0CCKW/view?usp=drive_link)
 
 ---
 
