@@ -10,7 +10,8 @@ def run_etl(file_id: str):
     df = optimize_dtypes(df)
     validate(df)
     save_parquet(df)
-    load_to_postgres(df)
+    # load_to_postgres(df)
+    print("Пропущена загрузка в базу (демо-режим).")
     print("ETL успешно завершён!")
 
 def cli():
@@ -21,3 +22,4 @@ def cli():
 
 if __name__ == "__main__":
     cli()
+
