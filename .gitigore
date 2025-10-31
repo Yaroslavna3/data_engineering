@@ -6,3 +6,6 @@ creds.db
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+poetry.lock
+processed_dataset.parquet
+dataset.csv
