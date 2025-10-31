@@ -1,6 +1,6 @@
 import pandas as pd
 
-def validate(df: pd.DataFrame, max_rows: int = 100) -> None:
+def validate(df: pd.DataFrame, max_rows: int = 100000) -> None:
     """
     Проверяет базовые ограничения:
     - не более max_rows строк
@@ -12,3 +12,4 @@ def validate(df: pd.DataFrame, max_rows: int = 100) -> None:
         raise ValueError(f"Датасет содержит {df.shape[0]} строк, лимит {max_rows}.")
     if df.isnull().all(axis=1).any():
         raise ValueError("Обнаружены полностью пустые строки.")
+
